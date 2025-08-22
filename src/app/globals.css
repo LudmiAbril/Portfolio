@@ -7,6 +7,7 @@
   --text: #ffffff;
   --footer-background: #18061f;
   --footer-text: #b2adb1;
+  --primary: #b74ad4;
 }
 
 .light {
@@ -19,6 +20,7 @@
   --color-foreground: var(--text);
   --color-footer-background: var(--footer-background);
   --color-footer-text: var(--footer-text);
+  --color-primary: var(--primary);
   --font-nunito: "Nunito", sans-serif;
   --font-noto-sans: "Noto Sans", sans-serif;
 }

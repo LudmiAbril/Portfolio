@@ -13,7 +13,7 @@ const Navbar = () => {
         setMenuOpen((prev) => !prev);
     }
     return (
-        <div className='sticky top-0 w-full px-[28px] bg-background'>
+        <div className='sticky top-0 w-full px-[28px] bg-background z-1000'>
             <div className='py-4 box-border flex justify-between items-center'>
                 <div className='flex items-center gap-[20px]'>
                     <button><IoMoonOutline size={20} /></button>
