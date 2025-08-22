@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="px-[28px]">
         <HomeSection />
         <Skills />
+        <Experience />
       </main>
       <Footer />
     </div>

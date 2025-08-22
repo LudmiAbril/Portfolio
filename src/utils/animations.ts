@@ -32,3 +32,11 @@ export const skillVariants = {
         },
     },
 };
+
+export const lineVariants = {
+    hidden: { scaleX: 0, originX: 0 },
+    visible: {
+        scaleX: 1,
+        transition: { duration: 0.6, ease: easeOut },
+    },
+};
