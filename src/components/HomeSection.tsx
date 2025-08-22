@@ -4,27 +4,7 @@ import React from 'react'
 import Button from './ui/Button'
 import HeroAnimation from './HeroAnimation'
 import { motion } from 'framer-motion';
-import { easeOut } from "framer-motion";
-
-const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-const textVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: easeOut }
-  },
-  exit: {
-    opacity: 0
-  }
-};
+import { containerVariants, textVariants } from '@/utils/animations';
 
 const HomeSection = () => {
   return (
