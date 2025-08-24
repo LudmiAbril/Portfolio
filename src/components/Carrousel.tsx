@@ -2,7 +2,7 @@
 
 import "../app/globals.css"
 import Image from "next/image";
-import { ProjectData } from "./ProfesionalProjects";
+import { ProjectData } from "./ProfessionalProjects";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/navigation";
