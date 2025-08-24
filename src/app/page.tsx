@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import HomeSection from "@/components/HomeSection";
@@ -15,7 +16,8 @@ export default function Home() {
         <Skills />
         <Experience />
         <ProfessionalProjects />
-        <PersonalProjects/>
+        <PersonalProjects />
+        <Contact />
       </main>
       <Footer />
     </div>
