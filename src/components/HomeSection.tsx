@@ -15,7 +15,7 @@ const HomeSection = () => {
         initial="hidden"
         animate="visible"
         className='text-center flex flex-col items-center'>
-        <motion.h1 className="font-noto-sans text-4xl font-medium mb-2" variants={textVariants} >Ludmila Pereyra</motion.h1>
+        <motion.h1 className="font-noto-sans text-4xl font-medium mb-2" variants={textVariants}>Ludmila Pereyra</motion.h1>
         <motion.h3 className='text-[var(--primary)] font-noto-sans text-2xl mb-2 textAnimation' variants={textVariants}>Desarrolladora Web</motion.h3>
         <motion.p className='font-nunito mb-8' variants={textVariants}>Me enfoco en la creacion de soluciones frontend atendiendo los requerimientos del producto y la experiencia de usuario.</motion.p>
         <motion.div variants={textVariants}><Button>Comenzar</Button></motion.div>

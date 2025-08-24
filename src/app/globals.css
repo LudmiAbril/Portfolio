@@ -30,3 +30,15 @@ body {
   color: var(--text);
   font-family: var(--font-nunito);
 }
+
+
+.swiper-pagination-bullet {
+  background-color: var(--footer-text) !important;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary) !important;
+  opacity: 1;
+  transform: scale(1.3);
+}
