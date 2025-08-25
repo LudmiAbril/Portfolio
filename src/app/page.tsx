@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <Navbar />
-      <main className="px-[28px]">
+      <main className="px-[28px] lg:px-[80px]">
         <HomeSection />
         <Skills />
         <Experience />

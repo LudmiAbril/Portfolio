@@ -48,7 +48,7 @@ const Navbar = () => {
                 </div>
                 <div>
                     <button className='lg:hidden' onClick={toggleMobileMenu}>{menuOpen ? <ClearIcon /> : <MenuIcon />}</button>
-                    <ul className='hidden flex gap-[50px] py-4 lg:flex'>
+                    <ul className='hidden flex gap-[50px] lg:flex'>
                         {menuOptionsEs.map((item, index) => (
                             <li key={index}
                                 className="group relative  transition transition-colors duration-[500ms] hover:text-[var(--primary)] cursor-pointer hover:scale-105"
