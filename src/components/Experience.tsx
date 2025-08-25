@@ -7,7 +7,7 @@ import { containerVariants, textVariants } from '@/utils/animations'
 
 const Experience = () => {
     return (
-        <div className='flex flex-col items-center min-h-screen'>
+        <div className='flex flex-col items-center min-h-screen scroll-mt-40' id='experience'>
             <motion.h1 className="font-noto-sans text-4xl font-medium mb-15" variants={textVariants}
                 initial="hidden"
                 whileInView="visible"

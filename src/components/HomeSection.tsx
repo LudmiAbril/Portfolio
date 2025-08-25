@@ -8,7 +8,7 @@ import { containerVariants, textVariants } from '@/utils/animations';
 
 const HomeSection = () => {
   return (
-    <div className='flex flex-col items-center min-h-screen'>
+    <div className='flex flex-col items-center min-h-screen' id='home'>
       <div className='mb-1 mt-30'><HeroAnimation /></div>
       <motion.div
         variants={containerVariants}

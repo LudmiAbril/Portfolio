@@ -8,12 +8,11 @@ import Button from './ui/Button';
 import { IoIosSend } from 'react-icons/io';
 import { GrMail } from 'react-icons/gr';
 
-
 const Contact = () => {
     const inputStyles = 'p-2 bg-white text-black rounded-[16px] focus:outline-none';
     const labelStyles = 'flex flex-col w-full';
     return (
-        <div className='flex flex-col items-center min-h-screen'>
+        <div className='flex flex-col items-center min-h-screen scroll-mt-40' id='contact'>
             <motion.h1 className="font-noto-sans text-4xl font-medium mb-15" variants={textVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -31,12 +30,10 @@ const Contact = () => {
                         <p className='mb-2'>Nombre</p>
                         <input type="text" id="nombre" name="nombre" className={inputStyles} />
                     </label>
-
                     <label htmlFor="email" className={labelStyles}>
                         <p className='mb-2'>Email</p>
                         <input type="email" id="email" name="email" className={inputStyles} />
                     </label>
-
                     <label htmlFor="mensaje" className={labelStyles}>
                         <p className='mb-2'>Mensaje</p>
                         <textarea id="mensaje" name="mensaje" className={`${inputStyles} h-60 resize-none`}></textarea>
