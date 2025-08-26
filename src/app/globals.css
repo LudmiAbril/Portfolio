@@ -31,6 +31,12 @@ body {
   font-family: var(--font-nunito);
 }
 
+@media (min-width: 1024px) { /* lg en Tailwind */
+  p {
+    font-size: large;
+  }
+}
+
 .swiper-pagination-bullet {
   background-color: var(--footer-text) !important;
   transition: all 0.3s ease;
