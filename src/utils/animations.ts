@@ -1,4 +1,5 @@
 import { easeOut } from "framer-motion";
+import { Variants } from "framer-motion";
 
 export const containerVariants = {
     hidden: {},
@@ -21,14 +22,15 @@ export const textVariants = {
     }
 };
 
-export const skillVariants = {
-    hidden: { opacity: 0, scale: 0.4 },
+export const skillVariants : Variants = {
+    hidden: { opacity: 0, scale: 0.7 },
     visible: {
         opacity: 1,
         scale: 1,
         transition: {
-            duration: 0.4,
-            ease: easeOut,
+             type: "spring",
+            stiffness: 400,
+            damping: 10,
         },
     },
 };
