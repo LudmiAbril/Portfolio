@@ -7,15 +7,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Keyboard, Navigation, Pagination } from "swiper/modules";
 import { FiExternalLink } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaGithub } from "react-icons/fa";
 
 type Props = { slides: ProjectData[] };
 
 const Carrousel: React.FC<Props> = ({ slides }) => {
-    const linkStyles = "font-noto-sans underline text-semibold text-xl flex gap-1 items-center"
+    const linkStyles = "font-noto-sans underline text-semibold text-xl flex gap-1 items-center hover:text-[var(--primary)] transition"
     const titleStyles = "font-noto-sans font-semibold mb-2"
+    const isWeb = typeof window !== "undefined" && window.innerWidth >= 1024;
 
     return (
         <Swiper
@@ -25,26 +26,40 @@ const Carrousel: React.FC<Props> = ({ slides }) => {
             scrollbar={{ draggable: true }}
             className="w-[100%]"
             loop
-            autoplay
-            modules={[Pagination]}
+            keyboard={{ enabled: true }}
+            navigation={isWeb}
+            modules={[Pagination, Navigation, Keyboard]}
         >
             {slides.map((project, index) => (
                 <SwiperSlide key={"project-" + index}>
-                    <div className="w-full h-full flex flex-col text-center items-center">
-                        <div className="relative w-80 h-50 mb-6">
+                    <div className="w-full h-full flex flex-col text-center items-center lg:flex-row lg:items-start lg:justify-center lg:gap-20">
+                        <div className="relative w-80 h-50 mb-6 lg:w-140 lg:h-100">
                             <Image src={project.image} alt="Project Image" fill className="object-cover rounded-[16px]" />
                         </div>
-                        <h4 className={`${titleStyles} text-2xl`}>{project.name}</h4>
-                        <p className={`${titleStyles} text-xl text-[var(--primary)]`}>{project.date}</p>
-                        <p>{project.description}</p>
-                        <div className="flex gap-6 justify-center mt-8">
-                            {project.demoUrl && <a href={project.demoUrl} target="_blank" className={linkStyles}>Visitar<FiExternalLink /></a>}
-                            {project.repoUrl && <a href={project.repoUrl} target="_blank" className={linkStyles}>Código<FaGithub /></a>}
+                        <div className="flex flex-col lg:items-start lg:w-auto lg:max-w-140">
+                            <h4 className={`${titleStyles} text-2xl lg:text-3xl`}>{project.name}</h4>
+                            <p className={`${titleStyles} text-xl text-[var(--primary)] lg:text-2xl`}>{project.date}</p>
+                            <p className="lg:text-start lg:mt-4">{project.description}</p>
+                            <div className="hidden lg:flex lg:gap-4 lg:mt-8 lg:flex-wrap">
+                                {project.stack.map((item, index) => (<div key={index} className="px-6 py-1 bg-[#551D63] rounded-[16px]">
+                                    {item}
+                                </div>))}
+                            </div>
+                            <div className="flex gap-6 justify-center mt-8 lg:mt-12">
+                                {project.demoUrl && <a href={project.demoUrl} target="_blank" className={linkStyles}>Demo<FiExternalLink /></a>}
+                                {project.repoUrl && <a href={project.repoUrl} target="_blank" className={linkStyles}>Código<FaGithub /></a>}
+                            </div>
                         </div>
                     </div>
                 </SwiperSlide>
             ))}
-            <div className="custom-swiper-pagination mt-[4rem] flex justify-center"></div>
+            <div className="custom-swiper-pagination mt-[4rem] lg:mt-[6rem] flex justify-center"></div>
+            <button className="custom-prev absolute top-1/2 -left-10 transform -translate-y-1/2 bg-black/40 text-white p-3 rounded-full hover:bg-black transition">
+                <FaArrowLeft />
+            </button>
+            <button className="custom-next absolute top-1/2 -right-10 transform -translate-y-1/2 bg-black/40 text-white p-3 rounded-full hover:bg-black transition">
+                <FaArrowRight />
+            </button>
         </Swiper>
     );
 };

@@ -15,7 +15,7 @@ const personalProjects: ProjectData[] = [
 const PersonalProjects = () => {
     return (
         <div className='flex flex-col items-center min-h-screen'>
-            <motion.h1 className="font-noto-sans text-4xl font-medium mb-15 text-center flex flex-col" variants={textVariants} initial="hidden"
+            <motion.h1 className="font-noto-sans text-4xl font-medium mb-15 text-center flex flex-col lg:text-5xl lg:inline lg:mb-30" variants={textVariants} initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}>Proyectos<span className='text-[var(--primary)]'> Personales</span></motion.h1>
             <motion.div
