@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --background: #21082B;
+  --background: #1d0329;
   --text: #ffffff;
-  --footer-background: #18061f;
+  --footer-background: #11061f;
   --footer-text: #b2adb1;
-  --primary: #b74ad4;
+  --primary: #9f4eeb;
 }
 
 .light {
@@ -31,7 +31,7 @@ body {
   font-family: var(--font-nunito);
 }
 
-@media (min-width: 1024px) { /* lg en Tailwind */
+@media (min-width: 1024px) {
   p {
     font-size: large;
   }

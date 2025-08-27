@@ -11,7 +11,7 @@ const Button = ({ children, className, onClick }: ButtonProps) => {
     return <motion.button
         whileHover={{
             scale: 1.05,
-            backgroundColor: "#8e2aaaff",
+            backgroundColor: "#7a37b9ff",
             color: "#ddddddff"
         }}
         whileTap={{

@@ -11,7 +11,7 @@ const HomeSection = () => {
   const scrollTo = useScrollToSection();
   return (
     <div className='flex flex-col items-center min-h-screen lg:flex-row lg:justify-between lg:items-center' id='home'>
-      <div className='mt-30 lg:order-1'><HeroAnimation /></div>
+      <div className='mt-30 lg:order-1 lg:mt-0'><HeroAnimation /></div>
       <motion.div
         variants={containerVariants}
         initial="hidden"
