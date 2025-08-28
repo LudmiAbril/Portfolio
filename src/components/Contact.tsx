@@ -2,10 +2,8 @@
 
 import { textVariants, containerVariants, skillVariants } from '@/utils/animations'
 import { motion } from 'framer-motion'
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import Button from './ui/Button';
-import { IoIosSend } from 'react-icons/io';
 import { GrMail } from 'react-icons/gr';
 import Line from './ui/Line';
 import ContactForm from './ContactForm';
