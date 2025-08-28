@@ -60,7 +60,7 @@ const ContactForm = () => {
                 <p className='mb-2'>Mensaje *</p>
                 <textarea id="message" name="message" onChange={handleInputChange} className={`${inputStyles} h-60 resize-none`} required></textarea>
             </label>
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 items-center lg:items-start'>
                 {emailSent === true && <p>Email enviado!</p>}
                 {emailSent === false && <p>Ocurrio un error al enviar el mail.</p>}
                 <Button className='flex items-center gap-2 mt-2'>Enviar <IoIosSend size={20} /></Button>

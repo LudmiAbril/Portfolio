@@ -11,7 +11,7 @@ import ContactForm from './ContactForm';
 const Contact = () => {
     return (
         <div className='flex flex-col items-center min-h-screen scroll-mt-40 lg:flex-row lg:items-start lg:justify-between' id='contact'>
-            <div className='lg:flex lg:flex-col lg:max-w-150'>
+            <div className='flex flex-col items-center lg:items-start lg:max-w-150'>
                 <motion.h1 className="font-noto-sans text-4xl font-medium mb-15 lg:text-5xl" variants={textVariants}
                     initial="hidden"
                     whileInView="visible"
