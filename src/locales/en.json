@@ -1,0 +1,187 @@
+{
+    "menu": {
+        "home": "Home",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "home": {
+        "subtitle": "Web Developer",
+        "description": "I focus on creating frontend solutions that meet product requirements and enhance the user experience.",
+        "buttonText": "Start"
+    },
+    "skills": {
+        "sectionTitle": "Skills"
+    },
+    "experience": {
+        "sectionTitle": "Experience",
+        "data": [
+            {
+                "company": "Flydevs",
+                "date": "Jun 2024 - May 2025",
+                "description": "Development of frontend solutions primarily using React, Next.js, TypeScript, and Tailwind CSS, with a focus on code optimization and performance. Collaboration with backend and UX/UI teams in REST API integration and responsive, mobile-first design. Work conducted under Agile Scrum methodologies."
+            }
+        ]
+    },
+    "professionalProjects": {
+        "sectionTitle": [
+            {
+                "text": "Professional",
+                "highlight": true
+            },
+            {
+                "text": "Projects",
+                "highlight": false
+            }
+        ],
+        "data": [
+            {
+                "name": "One Vok",
+                "date": "2025",
+                "description": "Vocational test app that lets users take, purchase, and manage tests.",
+                "image": "/onevok-2-img.jpg",
+                "stack": [
+                    "Next",
+                    "Typescript",
+                    "Tailwind",
+                    "Material UI"
+                ],
+                "demoUrl": "https://www.onevok.com/"
+            },
+            {
+                "name": "Millotón - Landing Page",
+                "date": "2024",
+                "description": "A website for a quizz app and its tv show",
+                "image": "/milloton-img.png",
+                "stack": [
+                    "React",
+                    "Typescript"
+                ],
+                "demoUrl": "https://www.milloton.com/"
+            },
+            {
+                "name": "Millotón - Dashboard",
+                "date": "2024",
+                "description": "Internal dashboard for managing questions and users.",
+                "image": "/milloton-2-img.png",
+                "stack": [
+                    "Next",
+                    "Typescript",
+                    "Material UI"
+                ]
+            },
+            {
+                "name": "Flydevs - Intranet",
+                "date": "2024",
+                "description": "Platform for internal management of company employees.",
+                "image": "/intranet-img.webp",
+                "stack": [
+                    "React",
+                    "Typescript",
+                    "Material UI",
+                    "Styled Components",
+                    "Context API"
+                ]
+            },
+            {
+                "name": "Tulip - Landing Page",
+                "date": "2024",
+                "description": "Website for a mobile app that connects users with various healthcare professionals.",
+                "image": "/tulip-img.webp",
+                "stack": [
+                    "React",
+                    "Typescript",
+                    "Material UI"
+                ]
+            }
+        ]
+    },
+    "personalProjects": {
+        "sectionTitle": [
+            {
+                "text": "Personal",
+                "highlight": true
+            },
+            {
+                "text": "Projects",
+                "highlight": false
+            }
+        ],
+        "data": [
+            {
+                "name": "Alquimia",
+                "date": "2025",
+                "description": "A perfume app to discover your ideal aromatic family, design your fragrance, customize your bottle, and connect with ingredient suppliers.",
+                "image": "/alquimia-img.png",
+                "stack": [
+                    "Next",
+                    "Typescript",
+                    "Tailwind",
+                    "Zustand"
+                ],
+                "demoUrl": "https://frontend-alquimia.vercel.app/"
+            },
+            {
+                "name": "Ghibli Wiki",
+                "date": "2024",
+                "description": "A wiki dedicated to the Studio Ghibli filmography.",
+                "image": "/ghibli-wiki-img.png",
+                "stack": [
+                    "React",
+                    "Javascript",
+                    "Tailwind"
+                ],
+                "demoUrl": "https://ludmiabril.github.io/Wiki-de-Studio-Ghibli-con-React/",
+                "repoUrl": "https://github.com/LudmiAbril/Wiki-de-Studio-Ghibli-con-React"
+            },
+            {
+                "name": "Weather Checker",
+                "date": "2024",
+                "description": "A weather app that lets users check current weather conditions anywhere in the world.",
+                "image": "/weather-app-img.png",
+                "stack": [
+                    "React",
+                    "Javascript",
+                    "Tailwind",
+                    "Material UI"
+                ],
+                "demoUrl": "https://ludmiabril.github.io/App-clima-actual/",
+                "repoUrl": "https://github.com/LudmiAbril/App-clima-actual"
+            }
+        ]
+    },
+    "contact": {
+        "sectionTitle": "¡Let's Talk!",
+        "description": "Im open to freelance and full-time opportunities. Feel free to reach out if you have a project in mind!",
+        "formInputs": [
+            {
+                "inputType": "text",
+                "inputName": "user_name",
+                "label": "Name"
+            },
+            {
+                "inputType": "email",
+                "inputName": "user_email",
+                "label": "Email"
+            },
+            {
+                "inputType": "text",
+                "inputName": "subject",
+                "label": "Subject"
+            },
+            {
+                "inputType": "textarea",
+                "inputName": "message",
+                "label": "Message"
+            }
+        ],
+        "buttonText": "Send",
+        "successMessage": "Email successfully sent!",
+        "errorMessage": "An error occurred while sending the email."
+    },
+    "linkTexts": {
+        "demo": "Demo",
+        "code": "Code"
+    }
+}

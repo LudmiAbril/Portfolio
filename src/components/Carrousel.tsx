@@ -2,7 +2,6 @@
 
 import "../app/globals.css"
 import Image from "next/image";
-import { ProjectData } from "./ProfessionalProjects";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,6 +9,8 @@ import "swiper/css/pagination";
 import { Keyboard, Navigation, Pagination } from "swiper/modules";
 import { FiExternalLink } from "react-icons/fi";
 import { FaArrowLeft, FaArrowRight, FaGithub } from "react-icons/fa";
+import { ProjectData } from "@/utils/typing";
+import { useLang } from "@/context/LanguageContext";
 
 type Props = { slides: ProjectData[] };
 
@@ -17,6 +18,7 @@ const Carrousel: React.FC<Props> = ({ slides }) => {
     const linkStyles = "font-noto-sans underline text-semibold text-xl flex gap-1 items-center hover:text-[var(--primary)] transition"
     const titleStyles = "font-noto-sans font-semibold mb-2"
     const isWeb = typeof window !== "undefined" && window.innerWidth >= 1024;
+    const { t } = useLang();
 
     return (
         <Swiper
@@ -46,8 +48,8 @@ const Carrousel: React.FC<Props> = ({ slides }) => {
                                 </div>))}
                             </div>
                             <div className="flex gap-6 justify-center mt-8 lg:mt-12">
-                                {project.demoUrl && <a href={project.demoUrl} target="_blank" className={linkStyles}>Demo<FiExternalLink /></a>}
-                                {project.repoUrl && <a href={project.repoUrl} target="_blank" className={linkStyles}>Código<FaGithub /></a>}
+                                {project.demoUrl && <a href={project.demoUrl} target="_blank" className={linkStyles}>{t.linkTexts.demo}<FiExternalLink /></a>}
+                                {project.repoUrl && <a href={project.repoUrl} target="_blank" className={linkStyles}>{t.linkTexts.code}<FaGithub /></a>}
                             </div>
                         </div>
                     </div>

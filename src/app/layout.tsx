@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import { LangProvider } from "@/context/LanguageContext";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -19,11 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${nunito.variable} antialiased box-border`}
-      >
-        {children}
-      </body>
+      <LangProvider>
+        <body
+          className={`${nunito.variable} antialiased box-border`}
+        >
+          {children}
+        </body>
+      </LangProvider>
     </html>
   );
 }

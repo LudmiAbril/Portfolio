@@ -4,8 +4,10 @@ import React from 'react';
 import Image from "next/image";
 import { motion } from 'framer-motion';
 import { textVariants, containerVariants, skillVariants } from '@/utils/animations';
+import { useLang } from '@/context/LanguageContext';
 
 const Skills = () => {
+    const { t } = useLang();
 
     interface Skills {
         name: string,
@@ -32,7 +34,7 @@ const Skills = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}>
-                Habilidades
+                {t.skills.sectionTitle}
             </motion.h1>
             <motion.div className='flex flex-wrap gap-8 items-center justify-center lg:w-full lg:gap-32' variants={containerVariants} viewport={{ once: true, amount: 0.3 }} initial="hidden"
                 whileInView="visible">
