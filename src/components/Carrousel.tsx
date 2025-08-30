@@ -36,14 +36,14 @@ const Carrousel: React.FC<Props> = ({ slides }) => {
                 <SwiperSlide key={"project-" + index}>
                     <div className="w-full h-full flex flex-col text-center items-center lg:flex-row lg:items-start lg:justify-center lg:gap-20">
                         <div className="relative w-80 h-50 mb-6 lg:w-140 lg:h-100">
-                            <Image src={project.image} alt="Project Image" fill className="object-cover rounded-[16px]" />
+                            <Image src={project.image} alt="Project Image" fill className="object-cover rounded-[16px] dark:shadow-lg" />
                         </div>
                         <div className="flex flex-col lg:items-start lg:w-auto lg:max-w-140">
                             <h4 className={`${titleStyles} text-2xl lg:text-3xl`}>{project.name}</h4>
                             <p className={`${titleStyles} text-xl text-[var(--primary)] lg:text-2xl`}>{project.date}</p>
                             <p className="lg:text-start lg:mt-4">{project.description}</p>
                             <div className="hidden lg:flex lg:gap-4 lg:mt-8 lg:flex-wrap">
-                                {project.stack.map((item, index) => (<div key={index} className="px-6 py-1 bg-[#551D63] rounded-[16px]">
+                                {project.stack.map((item, index) => (<div key={index} className="px-6 py-1 text-white bg-[#714d94] rounded-[16px]">
                                     {item}
                                 </div>))}
                             </div>

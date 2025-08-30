@@ -22,7 +22,7 @@ const Button = ({ children, className, onClick }: ButtonProps) => {
             stiffness: 400,
             damping: 10,
         }}
-        className={`${className} w-fit px-8 py-3 bg-[var(--primary)] rounded-[16px] font-noto-sans font-medium text-lg cursor-pointer`} onClick={onClick}>{children}</motion.button>;
+        className={`${className} !text-white w-fit px-8 py-3 bg-[var(--primary)] rounded-[16px] font-noto-sans font-medium text-lg cursor-pointer`} onClick={onClick}>{children}</motion.button>;
 };
 
 export default Button;

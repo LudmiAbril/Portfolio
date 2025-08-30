@@ -8,11 +8,14 @@
   --footer-background: #11061f;
   --footer-text: #b2adb1;
   --primary: #9f4eeb;
+  --carrousel-inactive-bullet: #cccccc;
 }
 
 .light {
   --background: #ffffff;
   --text: #000000;
+  --button-text: #ffffff;
+  --carrousel-inactive-bullet: #2c2c2c;
 }
 
 @theme inline {
@@ -38,7 +41,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background-color: var(--footer-text) !important;
+  background-color: var(--carrousel-inactive-bullet) !important;
   transition: all 0.3s ease;
 }
 
@@ -51,10 +54,4 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--primary) !important;
-}
-
-input:-webkit-autofill,
-textarea:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px white inset !important;
-  -webkit-text-fill-color: black !important;
 }

@@ -7,6 +7,8 @@ import { IoMoonOutline } from "react-icons/io5";
 import { ES, GB } from 'country-flag-icons/react/1x1';
 import { useScrollToSection } from '@/hooks/UseScrollToSection';
 import { useLang } from '@/context/LanguageContext';
+import { useTheme } from '@/context/ThemeContext';
+import { MdLightMode } from 'react-icons/md';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -38,7 +40,7 @@ const Navbar = () => {
         <nav className='sticky top-0 w-full px-[28px] lg:px-[80px] bg-background z-1000'>
             <div className='py-4 box-border flex justify-between items-center'>
                 <div className='flex items-center gap-[20px] lg:gap-[50px]'>
-                    <button><IoMoonOutline size={20} /></button>
+                    <ThemeSwitcher />
                     <LanguageSwitcher />
                 </div>
                 <div>
@@ -69,6 +71,11 @@ const Navbar = () => {
             }
         </nav>
     )
+}
+
+const ThemeSwitcher = () => {
+    const { theme, toggleTheme } = useTheme();
+    return (<button className='cursor-pointer hover:text-[var(--primary)] transition' onClick={toggleTheme}>{theme === "dark" ? (<IoMoonOutline size={20} />) : (<MdLightMode size={20} />)}</button>)
 }
 
 const LanguageSwitcher = () => {

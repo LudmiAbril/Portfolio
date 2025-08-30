@@ -6,7 +6,7 @@ import React from 'react'
 
 const Line = () => {
     return (
-        <motion.div className='bg-white w-full h-[0.5px]' variants={lineVariants}></motion.div>
+        <motion.div className='bg-[var(--text)] w-full h-[2px]' variants={lineVariants}></motion.div>
     )
 }
 
