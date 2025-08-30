@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Montserrat, Nunito, Raleway } from "next/font/google";
 import "./globals.css";
 import { LangProvider } from "@/context/LanguageContext";
 import { ThemeProvider } from "@/context/ThemeContext"
 
-const nunito = Nunito({
-  variable: "--font-nunito",
-  subsets: ["latin"],
-});
+const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
+const raleway = Raleway({ subsets: ["latin"], variable: "--font-raleway" });
 
 export const metadata: Metadata = {
   title: "Ludmila Pereyra - Portfolio",
@@ -24,7 +23,7 @@ export default function RootLayout({
       <ThemeProvider>
         <LangProvider>
           <body
-            className={`${nunito.variable} antialiased box-border`}
+            className={`${nunito.variable} ${montserrat.variable} ${raleway.variable} antialiased box-border`}
           >
             {children}
           </body>

@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --background: #1d0329;
@@ -24,14 +22,14 @@
   --color-footer-background: var(--footer-background);
   --color-footer-text: var(--footer-text);
   --color-primary: var(--primary);
-  --font-nunito: "Nunito", sans-serif;
-  --font-noto-sans: "Noto Sans", sans-serif;
+  --font-sans: var(--font-nunito), sans-serif;
+  --font-title: var(--font-montserrat), sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--text);
-  font-family: var(--font-nunito);
+  font-family: "Nunito", sans-serif;
 }
 
 @media (min-width: 1024px) {

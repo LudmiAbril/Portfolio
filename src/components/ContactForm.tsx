@@ -58,7 +58,7 @@ const ContactForm = () => {
 }
 
 const FormInput = ({ onInputChange, inputType, inputName, label }: FormInputProps) => {
-    const labelStyles = 'flex flex-col w-full lg:font-semibold';
+    const labelStyles = 'font-title flex flex-col w-full lg:font-semibold';
     const inputStyles = 'p-2 bg-white text-black rounded-[16px] focus:outline-none dark:border-2';
     return (<label htmlFor={inputName} className={labelStyles}>
         <p className='mb-2'>{label} *</p>

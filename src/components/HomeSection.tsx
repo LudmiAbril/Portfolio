@@ -19,9 +19,9 @@ const HomeSection = () => {
         initial="hidden"
         animate="visible"
         className='text-center flex flex-col items-center lg:items-start lg:max-w-[800px]'>
-        <motion.h1 className="font-noto-sans text-4xl font-medium mb-2 lg:text-5xl" variants={textVariants}>Ludmila Pereyra</motion.h1>
-        <motion.h3 className='text-[var(--primary)] font-noto-sans text-2xl mb-2 textAnimation lg:text-3xl' variants={textVariants}>{t.home.subtitle}</motion.h3>
-        <motion.p className='font-nunito mb-8 lg:text-left' variants={textVariants}>{t.home.description}</motion.p>
+        <motion.h1 className="font-title text-4xl font-medium mb-2 lg:text-5xl" variants={textVariants}>Ludmila Pereyra</motion.h1>
+        <motion.h3 className='text-[var(--primary)] font-title text-2xl mb-2 textAnimation lg:text-3xl lg:mb-4' variants={textVariants}>{t.home.subtitle}</motion.h3>
+        <motion.p className=' mb-8 lg:text-left' variants={textVariants}>{t.home.description}</motion.p>
         <motion.div variants={textVariants}><Button onClick={() => scrollTo("skills")}>{t.home.buttonText}</Button></motion.div>
       </motion.div >
     </div >

@@ -15,8 +15,8 @@ import { useLang } from "@/context/LanguageContext";
 type Props = { slides: ProjectData[] };
 
 const Carrousel: React.FC<Props> = ({ slides }) => {
-    const linkStyles = "font-noto-sans underline text-semibold text-xl flex gap-1 items-center hover:text-[var(--primary)] transition"
-    const titleStyles = "font-noto-sans font-semibold mb-2"
+    const linkStyles = "underline text-semibold text-xl flex gap-1 items-center hover:text-[var(--primary)] transition"
+    const titleStyles = "font-title font-semibold mb-2"
     const isWeb = typeof window !== "undefined" && window.innerWidth >= 1024;
     const { t } = useLang();
 
