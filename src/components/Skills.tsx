@@ -22,6 +22,8 @@ const Skills = () => {
         { name: "React", img: "/react-icon.svg" },
         { name: "Next", img: "/next-icon.svg" },
         { name: "Tailwind", img: "/tailwind-icon.svg" },
+        { name: "NodeJS", img: "/nodejs-icon.svg" },
+        { name: "MySQL", img: "/mysql-icon.svg" },
         { name: "Git", img: "/git-icon.svg" },
         { name: "Postman", img: "/postman-icon.svg" },
         { name: "Zustand", img: "/zustand-icon.svg" },
