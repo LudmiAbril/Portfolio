@@ -110,6 +110,20 @@
         ],
         "data": [
             {
+                "name": "NewJeans API",
+                "date": "2025",
+                "description": "REST API that provides access to public information about the popular music group NewJeans, including members, songs, albums, and music videos.",
+                "image": "/newjeans-api-img.png",
+                "stack": [
+                    "Nodejs",
+                    "Express",
+                    "Javacript",
+                    "MySQL"
+                ],
+                "demoUrl": "https://newjeans-api.up.railway.app/docs/",
+                "repoUrl": "https://github.com/LudmiAbril/NewJeans-api"
+            },
+            {
                 "name": "Alquimia",
                 "date": "2025",
                 "description": "A perfume app to discover your ideal aromatic family, design your fragrance, customize your bottle, and connect with ingredient suppliers.",

@@ -35,10 +35,10 @@ const Carrousel: React.FC<Props> = ({ slides }) => {
             {slides.map((project, index) => (
                 <SwiperSlide key={"project-" + index}>
                     <div className="w-full h-full flex flex-col text-center items-center lg:flex-row lg:items-start lg:justify-center lg:gap-20">
-                        <div className="relative w-80 h-50 mb-6 lg:w-140 lg:h-100">
+                        <div className="relative w-80 h-50 mb-6 lg:w-160 lg:h-100">
                             <Image src={project.image} alt="Project Image" fill className="object-cover rounded-[16px] dark:shadow-lg" />
                         </div>
-                        <div className="flex flex-col lg:items-start lg:w-auto lg:max-w-140">
+                        <div className="flex flex-col lg:items-start lg:w-auto lg:max-w-120">
                             <h4 className={`${titleStyles} text-2xl lg:text-3xl`}>{project.name}</h4>
                             <p className={`${titleStyles} text-xl text-[var(--primary)] lg:text-2xl`}>{project.date}</p>
                             <p className="lg:text-start lg:mt-4">{project.description}</p>
@@ -47,7 +47,7 @@ const Carrousel: React.FC<Props> = ({ slides }) => {
                                     {item}
                                 </div>))}
                             </div>
-                            <div className="flex gap-6 justify-center mt-8 lg:mt-12">
+                            <div className="flex gap-6 justify-center mt-8 lg:mt-10">
                                 {project.demoUrl && <a href={project.demoUrl} target="_blank" className={linkStyles}>{t.linkTexts.demo}<FiExternalLink /></a>}
                                 {project.repoUrl && <a href={project.repoUrl} target="_blank" className={linkStyles}>{t.linkTexts.code}<FaGithub /></a>}
                             </div>

@@ -110,6 +110,20 @@
         ],
         "data": [
             {
+                "name": "NewJeans API",
+                "date": "2025",
+                "description": "API REST que te permite acceder a información pública sobre el popular grupo musical NewJeans, incluyendo miembros, canciones, álbumes y videoclips.",
+                "image": "/newjeans-api-img.png",
+                "stack": [
+                    "Nodejs",
+                    "Express",
+                    "Javacript",
+                    "MySQL"
+                ],
+                "demoUrl": "https://newjeans-api.up.railway.app/docs/",
+                "repoUrl": "https://github.com/LudmiAbril/NewJeans-api"
+            },
+            {
                 "name": "Alquimia",
                 "date": "2025",
                 "description": "Aplicación que te permite encontrar tu familia olfativa ideal, diseñar tu propia fragancia, personalizar tu botella y conectarte con proveedores de insumos.",
